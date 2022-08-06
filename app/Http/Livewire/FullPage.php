@@ -8,6 +8,9 @@ class FullPage extends Component
 {
     public function render()
     {
-        return view('livewire.full-page');
+        //
+        // return view('livewire.fullpage')-s>extends('layouts.theme');
+
+        return view('livewire.fullpage')->layout('layouts.theme');
     }
 }

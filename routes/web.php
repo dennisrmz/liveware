@@ -1,5 +1,5 @@
 <?php
-
+use App\Http\Livewire\Fullpage;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,6 +12,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get('fullpage', FullPage::class)->name('fullpage');
 
 Route::get('/', function () {
     return view('welcome');
